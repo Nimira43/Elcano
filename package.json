@@ -4,8 +4,11 @@
   "description": "Indepth look at Node",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon node app.js"
   },
   "author": "Nick Rabone",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
