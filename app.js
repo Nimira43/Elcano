@@ -1,5 +1,8 @@
 const http = require('http')
-const routes = require('./routes')
-const server = http.createServer(routes.handler)
+const express = require('express')
+
+const app = express()
+
+const server = http.createServer()
 
 server.listen(3000)
