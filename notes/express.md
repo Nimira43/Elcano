@@ -190,3 +190,8 @@ app.listen(3000, () => {
 })
 
 #### This example demonstrates setting up middleware, defining a simple route using the router, and handling errors with a middleware function.
+
+## Links
+
+### app.use
+https://expressjs.com/en/4x/api.html#app.use
