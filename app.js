@@ -23,15 +23,15 @@ const server = http.createServer((req, res) => {
       const parsedBody = Buffer.concat(body).toString()
       const message = parsedBody.split('=')[1]
       fs.writeFileSync('message.txt', message) 
-    })
-    res.statusCode = 302
-    res.setHeader('Location', '/')
-    return res.end()
+      res.statusCode = 302
+      res.setHeader('Location', '/')
+      return res.end()
+    })    
   }
 
   res.setHeader('Content-Type', 'text/html')
   res.write('<html>')
-  res.write('<head><title>Node App V1.0.3</title></head')
+  res.write('<head><title>Node App V1.0.4</title></head')
   res.write('<body><h1>Node App Server</h1></body>')
   res.write('</html>')
   res.end()
