@@ -1,0 +1,17 @@
+{
+  "name": "node-indepth",
+  "version": "1.1.0",
+  "description": "Indepth look at Node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon node app.js"
+  },
+  "author": "Nick Rabone",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
