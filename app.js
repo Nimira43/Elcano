@@ -12,7 +12,7 @@ app.use('/product', (req, res, next) => {
 })
 
 app.use('/', (req, res, next) => {
-  res.send('<h1>Product </h1>')
+  res.send('<h1>Product Added!!!</h1>')
 })
 
 app.listen(3000)
