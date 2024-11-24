@@ -1,4 +1,4 @@
-const post = [
+const posts = [
   { 
     id: 1, 
     title: 'Hamilton joins Ferrari for 2025.', 
@@ -49,3 +49,8 @@ const post = [
     author: 'Joe Bloggs'
   },
 ]
+
+const getPosts = () => posts   
+export const getPostsLength = () => posts.length 
+
+export default getPosts
