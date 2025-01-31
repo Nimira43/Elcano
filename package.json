@@ -4,7 +4,8 @@
   "description": "Full stack app with backend API",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Nick Rabone",
   "license": "ISC",
