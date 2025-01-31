@@ -52,6 +52,13 @@ app.get('/api/ideas', (req, res) => {
   })
 })
 
+app.get('/api/ideas/:id', (req, res) => {
+  res.json({
+    success: true,
+    data: req.params.id
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server listening on Port ${port}`)
 })
