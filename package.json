@@ -1,0 +1,14 @@
+{
+  "name": "elcano",
+  "version": "1.0.0",
+  "description": "Node API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Rabone",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
