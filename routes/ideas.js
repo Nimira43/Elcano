@@ -62,4 +62,9 @@ router.get('/:id', (req, res) => {
   })
 })
 
+router.post('/', (req, res) => {
+  res.send('New post success.')
+})
+
+
 module.exports = router
