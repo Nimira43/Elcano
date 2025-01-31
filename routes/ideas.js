@@ -63,6 +63,15 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+  const idea = {
+    id: ideas.length + 1,
+    text: req.body.text,
+    tag: req.body.tag,
+    username: req.body.username,
+    date: new Date().toISOString().slice(0, 10)
+  }
+  console.log(idea)
+
   res.send(req.body.text)
 })
 
