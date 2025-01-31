@@ -41,11 +41,15 @@ const ideas = [
   }
 ];
 
-
-
-
 app.get('/', (req, res) => {
-  res.send('Elano Random Ideas Application')
+  res.json('Elano Random Ideas Application')
+})
+
+app.get('/api/ideas', (req, res) => {
+  res.json({
+    success: true,
+    data: ideas
+  })
 })
 
 app.listen(port, () => {
