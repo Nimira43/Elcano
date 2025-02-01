@@ -36,8 +36,114 @@ const ideas = [
     tag: 'Backend',
     username: 'GemmaAI2007',
     date: '2025-01-14'
+  },
+  {
+    id: 6,
+    text: 'Create a machine learning model to predict house prices.',
+    tag: 'Machine Learning',
+    username: 'DataSciPro',
+    date: '2024-12-21'
+  },
+  {
+    id: 7,
+    text: 'Develop a personal finance management app.',
+    tag: 'Mobile App',
+    username: 'AppDevGuru',
+    date: '2025-02-01'
+  },
+  {
+    id: 8,
+    text: 'Build a weather forecasting website using APIs.',
+    tag: 'APIs',
+    username: 'WeatherWiz',
+    date: '2024-12-15'
+  },
+  {
+    id: 9,
+    text: 'Create a Python script for web scraping.',
+    tag: 'Python',
+    username: 'CodeNinja123',
+    date: '2025-01-05'
+  },
+  {
+    id: 10,
+    text: 'Develop a real-time chat application using Socket.io.',
+    tag: 'WebSocket',
+    username: 'MaxMac831',
+    date: '2025-01-22'
+  },
+  {
+    id: 11,
+    text: 'Build a recommendation system for movies.',
+    tag: 'Machine Learning',
+    username: 'MovieBuff101',
+    date: '2025-01-12'
+  },
+  {
+    id: 12,
+    text: 'Create a dashboard for visualising sales data.',
+    tag: 'Data Visualisation',
+    username: 'VizExpert',
+    date: '2024-12-29'
+  },
+  {
+    id: 13,
+    text: 'Develop a social media analytics tool.',
+    tag: 'Analytics',
+    username: 'SocialSavvy',
+    date: '2025-01-02'
+  },
+  {
+    id: 14,
+    text: 'Build a voice-controlled virtual assistant.',
+    tag: 'AI',
+    username: 'VoiceMaster',
+    date: '2024-12-31'
+  },
+  {
+    id: 15,
+    text: 'Create a blog platform with user authentication.',
+    tag: 'Full Stack',
+    username: 'BlogBuilder',
+    date: '2025-01-08'
+  },
+  {
+    id: 16,
+    text: 'Design a real-time stock market tracker.',
+    tag: 'Finance',
+    username: 'MarketGuru',
+    date: '2024-12-27'
+  },
+  {
+    id: 17,
+    text: 'Develop a quiz application using JavaScript.',
+    tag: 'JavaScript',
+    username: 'QuizMaster',
+    date: '2025-01-10'
+  },
+  {
+    id: 18,
+    text: 'Build a sentiment analysis tool for tweets.',
+    tag: 'NLP',
+    username: 'TalGal_X2',
+    date: '2025-01-19'
+  },
+  {
+    id: 19,
+    text: 'Create a travel itinerary planner app.',
+    tag: 'Mobile App',
+    username: 'TravelPro',
+    date: '2025-01-25'
+  },
+  {
+    id: 20,
+    text: 'Develop a job board website with search and filter features.',
+    tag: 'Web Development',
+    username: 'CodeNinja123',
+    date: '2025-01-17'
   }
-]
+];
+
 
 router.get('/', (req, res) => {
   res.json({
