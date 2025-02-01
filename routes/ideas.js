@@ -70,10 +70,12 @@ router.post('/', (req, res) => {
     username: req.body.username,
     date: new Date().toISOString().slice(0, 10)
   }
-  console.log(idea)
+  ideas.push(idea)
 
-  res.send(req.body.text)
+  res.json({
+    success: true,
+    data: idea
+  })
 })
-
 
 module.exports = router
