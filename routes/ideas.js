@@ -204,22 +204,38 @@ router.put('/:id', (req, res) => {
 })
 
 router.delete('/:id', (req, res) => {
-  const ideaIndex = ideas.findIndex((idea) => idea.id === +req.params.id)
+  const idea = ideas.find((idea) => idea.id === +req.params.id)
 
-  if (ideaIndex === -1) {
+  if (!idea) {
     return res.status(404).json({
       success: false,
       error: 'Resource not found'
     })
   }
 
-  ideas.splice(ideaIndex, 1)
-
+  const index = ideas.indexOf(idea)
+  ideas.splice(index, 1)
   res.json({
     success: true,
-    message: 'Idea deleted successfully'
+    data: {}
   })
 })
 
+// router.delete('/:id', (req, res) => { 
+//   const ideaIndex = ideas.findIndex((idea) => idea.id === +req.params.id) 
+  
+//   if (ideaIndex === -1) { 
+//     return res.status(404).json({ 
+//       success: false, 
+//       error: 'Resource not found' 
+//     }) 
+//   } 
+  
+//   ideas.splice(ideaIndex, 1) 
+//   res.json({ 
+//     success: true, 
+//     message: 'Idea deleted successfully' 
+//   }) 
+// })
 
 module.exports = router
