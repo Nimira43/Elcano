@@ -1,4 +1,5 @@
 const express = require('express')
+
 const port = 5001
 
 const app = express()
@@ -9,7 +10,7 @@ app.use(express.urlencoded({
 }))
 
 app.get('/', (req, res) => {
-  res.json('Elano Random Ideas Application')
+  res.json('Elcano Random Ideas Application')
 })
 
 const ideasRouter = require('./routes/ideas')
