@@ -146,11 +146,19 @@ const ideas = [
 ];
 
 
-router.get('/', (req, res) => {
-  res.json({
+router.get('/', async (req, res) => {
+  try {
+    const ideas = await Idea.find()
+    res.json({
     success: true,
     data: ideas
   })
+  } catch (error) {
+    res.status(500).json({
+      success: false, 
+      error: 'Something went wrong.'
+    })
+  }
 })
 
 router.get('/:id', (req, res) => {
