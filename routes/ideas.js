@@ -180,20 +180,24 @@ router.get('/:id', (req, res) => {
   })
 })
 
-router.post('/', (req, res) => {
-  const idea = {
-    id: ideas.length + 1,
+router.post('/', async (req, res) => {
+  const idea = new Idea ({
     text: req.body.text,
     tag: req.body.tag,
     username: req.body.username,
-    date: new Date().toISOString().slice(0, 10)
-  }
-  ideas.push(idea)
-
-  res.json({
-    success: true,
-    data: idea
   })
+  try {
+    const saveIdea = await idea.save()
+    res.json({
+    success: true,
+    data: saveIdea
+  })
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: 'Something went wrong'
+    })
+  }
 })
 
 router.put('/:id', (req, res) => {
