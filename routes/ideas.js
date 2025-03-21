@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const Idea = require('../models/Idea')
 
 const ideas = [
   {
@@ -153,7 +154,10 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-  const idea = ideas.find((idea) => idea.id === +req.params.id)
+  const idea = ideas.find(
+    (idea) =>
+      idea.id === +req.params.id
+  )
 
   if (!idea) {
     return res.status(404).json({
