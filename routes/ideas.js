@@ -145,7 +145,6 @@ const ideas = [
   }
 ];
 
-
 router.get('/', async (req, res) => {
   try {
     const ideas = await Idea.find()
@@ -154,6 +153,7 @@ router.get('/', async (req, res) => {
     data: ideas
   })
   } catch (error) {
+    console.log(error)
     res.status(500).json({
       success: false, 
       error: 'Something went wrong.'
@@ -187,12 +187,13 @@ router.post('/', async (req, res) => {
     username: req.body.username,
   })
   try {
-    const saveIdea = await idea.save()
+    const savedIdea = await idea.save()
     res.json({
     success: true,
-    data: saveIdea
+    data: savedIdea
   })
   } catch (error) {
+    console.log(error)
     res.status(500).json({
       success: false,
       error: 'Something went wrong'
