@@ -556,25 +556,6 @@ video {
   display: none;
 }
 
-.bg-dark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 17 17 / var(--tw-bg-opacity, 1));
-}
-
-.p-5{
-  padding: 1.25rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-main{
-  --tw-text-opacity: 1;
-  color: rgb(255 69 0 / var(--tw-text-opacity, 1));
-}
-
 * {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
