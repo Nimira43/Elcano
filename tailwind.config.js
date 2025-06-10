@@ -3,7 +3,7 @@ export default {
    content: ['./*.html'],
    theme: {
      extend: {
-      color: {
+      colors: {
         'main': '#ff4500',
         'support': '00ffff',
         'dark': '#111',
