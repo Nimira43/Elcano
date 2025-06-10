@@ -9,6 +9,10 @@ export default {
    },
    theme: {
      extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        logo: ['Loved by the King', 'cursive']
+      },
       colors: {
         'main': '#ff4500',
         'support': '00ffff',
