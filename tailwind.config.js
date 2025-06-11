@@ -19,11 +19,11 @@ export default {
         'grey-dark': '#333',
         'grey-light': '#ccc',
         'grey-light-extra': '#eee',
-        'green-bg': '#57ed4c',
+        'green-bg': '#8ff188',
         'blue-bg': '#0c69dc',
         'red-bg': '#ca2020',
         'orange-bg': '#ff4500',
-        'yellow-bg': '#c9ac0b'
+        'yellow-bg': '#d9ec4e'
       }
      },
    },
