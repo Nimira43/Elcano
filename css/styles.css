@@ -597,6 +597,13 @@ video {
   margin-top: 1.5rem;
 }
 
+.line-clamp-6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
 .flex {
   display: flex;
 }
@@ -721,6 +728,13 @@ video {
 .text-light {
   --tw-text-opacity: 1;
   color: rgb(255 252 250 / var(--tw-text-opacity, 1));
+}
+
+.line-clamp-6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
 }
 
 .test {
