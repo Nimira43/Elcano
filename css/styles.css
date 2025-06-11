@@ -679,8 +679,20 @@ video {
   line-height: 1.75rem;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-dark {
