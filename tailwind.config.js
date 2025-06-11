@@ -19,7 +19,7 @@ export default {
         'grey-dark': '#333',
         'grey-light': '#ccc',
         'grey-light-extra': '#eee',
-        'green-bg': '#39e02d',
+        'green-bg': '#57ed4c',
         'blue-bg': '#0c69dc',
         'red-bg': '#ca2020',
         'orange-bg': '#ff4500',
