@@ -21,7 +21,7 @@ export default {
         'grey-light-extra': '#eee',
         'green-bg': '#39e02d',
         'blue-bg': '#0c69dc',
-        'red-bg': '#0c69dc',
+        'red-bg': '#ca2020',
         'orange-bg': '#ff4500',
         'yellow-bg': '#c9ac0b'
       }
