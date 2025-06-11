@@ -736,8 +736,16 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:grid-cols-4 {
