@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Nimira43/Backend-REST-API-Project#readme",
   "description": "",
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "tailwindcss": "^3.4.17"
   }
 }
